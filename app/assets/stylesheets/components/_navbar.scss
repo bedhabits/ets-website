@@ -1,17 +1,39 @@
 .navbar-ets {
+  position: fixed-top;
   justify-content: space-between;
   background-color: transparent;
   transition: 0.5s background-color ease;
+
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 21px;
+    padding-bottom: 0.3125rem;
+    margin-left: 30px;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
 }
 
 .navbar-ets-black {
   background-color: $black;
 }
 
-// .navbar-ets .navbar-collapse {
-//   flex-grow: 0;
-// }
+.link-pages {
+  margin-right: 8px;
+  padding-top: 21px;
+  text-decoration: none;
+  font-variant-caps: all-small-caps;
+  font-size: larger;
+  display: flex;
+}
 
-// .navbar-ets .navbar-brand img {
-//   width: 40px;
-// }
+.link-font {
+  color: $white;
+
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+}

@@ -1,9 +1,14 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-ets">
+<div class="navbar navbar-expand-sm navbar-light navbar-ets fixed-top">
   <%= link_to "#", class: "navbar-brand" do %>
     <%= image_tag "menu-bar.svg" %>
   <% end %>
 
+  <div class="link-pages">
+    <%= link_to "Bio / Studio", bio_path, class: "link-font", style: "margin-right: 30px;"  %>
+    <%= link_to "Keep in touch", contact_path, class: "link-font" %>
+  </div>
+
   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon">Bio - Studio</span>
   </button> -->
 </div>
