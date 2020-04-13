@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# require 'youtube_it'
+
+# client = YouTubeIt::Client.new(:dev_key => "AIzaSyATBpLTnh-L19Z6XN_h-mWeuCFySPfEPM4")
+# client.video_by("https://youtu.be/-XOFx7WV4xQ")

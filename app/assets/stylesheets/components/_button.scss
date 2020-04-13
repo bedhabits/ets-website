@@ -1,0 +1,9 @@
+.btn-primary a {
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+    color: $light-purple;
+    transition: 0.1s;
+  }
+}
