@@ -18,3 +18,6 @@ const initUpdateNavbarOnScroll = () => {
 
 export { initUpdateNavbarOnScroll };
 
+$("#exampleModalCenter").on('hidden.bs.modal', function (e) {
+    $("#exampleModalCenter iframe").attr("src", $("#exampleModalCenter iframe").attr("src"));
+});
