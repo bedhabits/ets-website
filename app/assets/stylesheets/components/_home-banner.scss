@@ -1,9 +1,13 @@
 .home-banner {
+  // min-height: 100vh;
+  background-size: cover;
+  min-width: 100%;
+
   img {
     // background-image: url('home-banner.svg');
-    background-size: cover;
-    // height: 100vh;
+    // height: 100%;
     width: 100%;
+    object-fit: fill;
   }
 }
 

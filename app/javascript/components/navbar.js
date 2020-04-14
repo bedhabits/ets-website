@@ -4,7 +4,8 @@ const initUpdateNavbarOnScroll = () => {
 
   if (navbar) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= window.innerHeight) {
+      // if (window.scrollY >= window.innerHeight) {
+      if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 320) {
         navbar.classList.add('navbar-ets-black');
         menuBar.src = "/menu-bar-purple.svg";
       } else {
