@@ -1,6 +1,23 @@
 .modal-content {
-  width: 100vh;
-  height: 90vh;
-  background-color: $gray;
-  border-radius: 5px;
+  margin: 8px;
+  align-self: center;
+  width: 90%;
 }
+
+.modal-dialog {
+  margin: 0px !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 100%;
+      margin: 1.75rem auto;
+  }
+}
+
+.modal-body {
+  padding: 8px;
+  background: $gray;
+}
+
+

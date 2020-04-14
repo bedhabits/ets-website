@@ -1,6 +1,9 @@
 import "bootstrap";
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 
-initUpdateNavbarOnScroll();
+const changeNavbar = document.querySelector(".pages.home");
+if (changeNavbar) {
+  initUpdateNavbarOnScroll();
+}
 
 
