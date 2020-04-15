@@ -2,7 +2,7 @@
   position: fixed-top;
   justify-content: space-between;
   background-color: transparent;
-  transition: 0.8s background-color ease;
+  transition: 0.8s;
 
   .navbar-brand {
     display: inline-block;
@@ -17,8 +17,9 @@
 
 .navbar-ets-black {
   background-color: $black;
-  border: 1px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   box-sizing: border-box;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .link-pages {
