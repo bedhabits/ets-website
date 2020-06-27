@@ -41,3 +41,20 @@ Style/EmptyMethod:
   Enabled: false
 Bundler/OrderedGems:
   Enabled: false
+
+# New User Styles
+
+Metrics/LineLength:
+  Max: 120
+
+StringLiterals:
+  Enabled: false
+
+EnforcedStyle:
+  brackets
+
+NumericLiterals:
+  Disable
+
+NumericLiterals:
+  Disable
