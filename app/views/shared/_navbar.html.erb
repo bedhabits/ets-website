@@ -4,7 +4,13 @@
   <% end %>
 
   <div class="link-pages">
-    <%= link_to "Bio / Studio", bio_path, class: "link-font", style: "margin-right: 30px;"  %>
+    <% if current_user %>
+      <%= link_to "Sign Out", class: "link-font", style: "padding-right: 44px;", method: :delete %>
+    <% else %>
+      <%= link_to "Login", new_user_registration_path, class: "link-font", style: "margin-right: 40px;" %>
+    <% end %>
+
+    <%= link_to "Bio / Studio", bio_path, class: "link-font", style: "margin-right: 30px;" %>
     <%= link_to "Keep in touch", contact_path, class: "link-font" %>
   </div>
 
