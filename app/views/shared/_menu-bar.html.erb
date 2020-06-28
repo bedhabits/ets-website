@@ -1,4 +1,10 @@
 <div id="mySidebar" class="sidebar">
   <%= link_to "Home", root_path, class: "dropdown-item" %>
   <%= link_to "Profile", edit_user_registration_path, class: "dropdown-item" %>
+
+  <% if current_user %>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "dropdown-item", data: { confirm: "Are you sure?" } %>
+  <% else %>
+    <%= link_to "Login", user_session_path, class: "dropdown-item" %>
+  <% end %>
 </div>

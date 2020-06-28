@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @service.media %>
+</p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @service.period %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @service.service %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>
