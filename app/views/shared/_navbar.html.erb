@@ -7,12 +7,12 @@
 
 
 
-  <div class="link-pages">
-    <% if current_user %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "link-font", style: "padding-right: 44px;", data: { confirm: "Are you sure?" } %>
-    <% else %>
-      <%= link_to "Login", user_session_path, class: "link-font", style: "margin-right: 40px;" %>
-    <% end %>
+  <div class="link-pages mt-4">
+    <!-- <% if current_user %> -->
+      <!-- <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "link-font", style: "padding-right: 44px;", data: { confirm: "Are you sure?" } %> -->
+    <!-- <% else %> -->
+      <!-- <%= link_to "Login", user_session_path, class: "link-font", style: "margin-right: 40px;" %> -->
+    <!-- <% end %> -->
 
     <%= link_to "Bio / Studio", bio_path, class: "link-font", style: "margin-right: 30px;" %>
     <%= link_to "Keep in touch", contact_path, class: "link-font" %>
