@@ -12,8 +12,11 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <%= render 'shared/navbar' %>
+    <%= render 'shared/menu-bar' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+    <%= render 'shared/flashes' %>
+
   </body>
 </html>

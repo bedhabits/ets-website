@@ -3,6 +3,7 @@
   justify-content: space-between;
   background-color: transparent;
   transition: 0.8s;
+  margin: -16px;
 
   .navbar-brand {
     display: inline-block;
@@ -29,15 +30,21 @@
   font-variant-caps: all-small-caps;
   font-size: larger;
   display: flex;
+  a {
+    color: $white;
+  }
+
+
+
 }
 
 .link-font {
-  color: $white;
+  // color: $white;
 
   &:hover {
     color: $purple;
     text-decoration: none;
-    transition: 0.1s;
+    transition: 0.15s;
   }
 }
 

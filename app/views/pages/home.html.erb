@@ -6,13 +6,25 @@
       </div>
 
       <div class="container card-showreel col-sm-12 col-md-12 col-lg-12 col-xl-12" style="align-content: center;">
+        <div class="row" style="align-content: center;">
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
-        style="height: 40px;width: 200px;align-self: center;">
-          showreel
-        </button>
+          <button type="button" class="btn-showreel btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            showreel
+          </button>
 
-        <%= render 'shared/modal' %>
+          <%= render 'shared/modal' %>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
       </div>
 
 

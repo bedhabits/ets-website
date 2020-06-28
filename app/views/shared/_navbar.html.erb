@@ -1,10 +1,20 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-ets fixed-top">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "/menu-bar.svg", id: "menu-bar" %>
-  <% end %>
+  <div id="menu-bar-open" class="dropdownMenuLink">
+    <!-- <%= link_to root_path, class: "navbar-brand" do %> -->
+      <%= image_tag "/menu-bar.svg", id: "menu-bar" %>
+    <!-- <% end %> -->
+  </div>
+
+
 
   <div class="link-pages">
-    <%= link_to "Bio / Studio", bio_path, class: "link-font", style: "margin-right: 30px;"  %>
+    <% if current_user %>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "link-font", style: "padding-right: 44px;", data: { confirm: "Are you sure?" } %>
+    <% else %>
+      <%= link_to "Login", user_session_path, class: "link-font", style: "margin-right: 40px;" %>
+    <% end %>
+
+    <%= link_to "Bio / Studio", bio_path, class: "link-font", style: "margin-right: 30px;" %>
     <%= link_to "Keep in touch", contact_path, class: "link-font" %>
   </div>
 
