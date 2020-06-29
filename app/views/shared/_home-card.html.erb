@@ -1,0 +1,19 @@
+<!-- Home Card in banner -->
+<div id="polina" class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h1 class="card-title">ETS Sound Vision</h1>
+    <p class="card-subtitle mb-2 text-muted">Sound engineered by Bernardo Goes</p>
+    <hr>
+
+    <!-- <div class="container card card-showreel col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: flex; justify-content: space-between; align-content: center;"> -->
+      <button type="button" class="card-link btn-showreel" data-toggle="modal" data-target="#exampleModalCenter">
+        showreel
+      </button>
+
+      <%= render 'shared/modal' %>
+    <!-- </div> -->
+
+    <p class="card-text">Studio text about past jobs and services included</p>
+    <%= link_to "services", class: "card-link btn-services"  %>
+  </div>
+</div>
