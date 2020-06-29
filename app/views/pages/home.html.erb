@@ -1,23 +1,24 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
-      <div class="container col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
-        <%= image_tag "/home-banner.svg", alt: "Home Banner", class: "home-banner" %>
+      <div class="container card-banner col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
+
+        <div class="card">
+          <div class="card-img">
+            <%= image_tag "/home-banner.svg", alt: "Home Banner", class: "home-banner" %>
+          </div>
+
+          <div class="card-img-overlay">
+            <%= render "shared/home-card" %>
+          </div>
+
+        </div>
       </div>
 
-      <div class="container card-showreel col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: flex; justify-content: space-between; align-content: center;">
-        <button type="button" class="btn-showreel btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          showreel
-        </button>
-
-        <%= render 'shared/modal' %>
-      </div>
 
 
 
-
-
-      <div class="container card-carousel carousel slide" id="carouselExampleIndicators" data-ride="carousel" style="height: 100vh;">
+      <div class="container card card-carousel carousel slide" id="carouselExampleIndicators" data-ride="carousel" style="height: 100vh;">
         <div class="row">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

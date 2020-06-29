@@ -10,3 +10,11 @@
 
 # client = YouTubeIt::Client.new(:dev_key => "AIzaSyATBpLTnh-L19Z6XN_h-mWeuCFySPfEPM4")
 # client.video_by("https://youtu.be/-XOFx7WV4xQ")
+puts "Cleaning Data Base..."
+# Service.destroy_all
+
+puts "Creating Service..."
+media = []
+period = []
+service = []
+
